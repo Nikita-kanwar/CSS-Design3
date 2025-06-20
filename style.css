@@ -72,3 +72,44 @@ html, body{
     text-transform: uppercase;
     font-weight: 600;
 }
+
+#content{
+    height:calc(100% - 130px);
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+#text-content{
+    height: 35%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+color: transparent;
+height: 5px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.elem h1{
+    font-size: 70px;
+    font-family: gilroy;
+    font-weight: 400;
+}
